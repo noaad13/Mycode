@@ -1,4 +1,4 @@
 @ECHO OFF
 Powershell  -window hidden -command ""
 FOR /f "tokens=3" %%B IN ('reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" /v Desktop') do set Bureau=%%B
-Start calc
+Start calc.exe
